@@ -5,11 +5,8 @@ from arbitrage_finder import find_arbitrage_opportunities
 from sports_selection import fetch_sports, user_select_sports
 import pandas as pd
 
-# Load environment variables from .env file
-load_dotenv()
 
-# Access the API key
-API_KEY = os.getenv('ODDS_API_KEY')
+API_KEY = '96e0d8cee21660539bf27bc975f9ff26'
 
 def present_data(odds_data, selected_sports, combined_df):
     flattened_data = []
